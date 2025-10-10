@@ -7,9 +7,9 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { Users } from 'lucide-react';
 
 const testimonials = [
-  { name: "Priya Sharma", company: "CEO, TechVista Mumbai", text: "Webboin transformed our digital presence. Their SEO strategy doubled our organic traffic in just three months, and the ROI has been phenomenal!", avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704d", rating: 5 },
-  { name: "Rajesh Kumar", company: "Founder, FoodieExpress Bangalore", text: "The paid advertising campaigns exceeded all expectations. Professional, data-driven, and incredibly responsive. Our best marketing investment yet.", avatar: "https://i.pravatar.cc/150?u=a042581f4e29026705d", rating: 5 },
-  { name: "Ananya Patel", company: "CMO, StyleBazaar Delhi", text: "Their social media expertise is unmatched. Our engagement rates tripled, and we've built an amazing community around our brand.", avatar: "https://i.pravatar.cc/150?u=a042581f4e29026706d", rating: 5 },
+  { name: "Priya", company: "CEO, TechVista Mumbai", text: "Webboin transformed our digital presence. Their SEO strategy doubled our organic traffic in just three months, and the ROI has been phenomenal!", avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704d", rating: 5 },
+  { name: "Nandini", company: "Founder, FoodieExpress Bangalore", text: "The paid advertising campaigns exceeded all expectations. Professional, data-driven, and incredibly responsive. Our best marketing investment yet.", avatar: "https://i.pravatar.cc/150?u=a042581f4e29026705d", rating: 5 },
+  { name: "Ananya", company: "CMO, StyleBazaar Delhi", text: "Their social media expertise is unmatched. Our engagement rates tripled, and we've built an amazing community around our brand.", avatar: "https://i.pravatar.cc/150?u=a042581f4e29026706d", rating: 5 },
 ];
 
 const TestimonialSkeleton = () => (

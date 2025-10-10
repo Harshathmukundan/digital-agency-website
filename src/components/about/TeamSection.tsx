@@ -5,10 +5,10 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Users } from 'lucide-react';
 
 const teamMembers = [
-  { name: 'Arjun Mehta', role: 'Founder & CEO', avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026707d', bio: 'Visionary leader with 10+ years in digital marketing' },
-  { name: 'Sneha Reddy', role: 'Head of SEO', avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026708d', bio: 'SEO expert driving organic growth strategies' },
-  { name: 'Vikram Singh', role: 'Lead Ads Strategist', avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026709d', bio: 'PPC specialist maximizing ROI for clients' },
-  { name: 'Kavya Iyer', role: 'Social Media Director', avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026710d', bio: 'Creative storyteller building brand communities' },
+  { name: 'Praveen', role: 'Founder & CEO', avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026707d', bio: 'Visionary leader with 10+ years in digital marketing' },
+  { name: 'Sneha Aadhitiya', role: 'Head of SEO', avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026708d', bio: 'SEO expert driving organic growth strategies' },
+  { name: 'Prahini Praveen', role: 'Lead Ads Strategist', avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026709d', bio: 'PPC specialist maximizing ROI for clients' },
+  { name: 'Pavithra Harshath', role: 'Social Media Director', avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026710d', bio: 'Creative storyteller building brand communities' },
 ];
 
 export const TeamSection = () => (
