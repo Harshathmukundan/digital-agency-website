@@ -54,7 +54,7 @@ export const TestimonialsSection = () => {
                     </div>
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl font-heading">What Our Clients Say</h2>
                     <p className="max-w-[700px] text-muted-foreground md:text-lg leading-relaxed">
-                        Don't just take our word for it. Hear from businesses we've helped grow.
+                        Don&apos;t just take our word for it. Hear from businesses we&apos;ve helped grow.
                     </p>
                 </div>
                 <div className="relative mt-12 max-w-4xl mx-auto">
@@ -79,7 +79,7 @@ export const TestimonialsSection = () => {
                                                         </svg>
                                                     ))}
                                                 </div>
-                                                <p className="text-lg md:text-xl text-center mb-8 italic leading-relaxed font-medium relative z-10">"{testimonial.text}"</p>
+                                                <p className="text-lg md:text-xl text-center mb-8 italic leading-relaxed font-medium relative z-10">&ldquo;{testimonial.text}&rdquo;</p>
                                                 <div className="flex items-center justify-center gap-4">
                                                     <Avatar className="h-16 w-16 border-4 border-purple-500">
                                                         <AvatarImage src={testimonial.avatar} />

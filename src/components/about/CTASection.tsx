@@ -12,13 +12,13 @@ export const CTASection = () => (
       <div className="space-y-6 animate-slide-up">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 dark:bg-purple-900/30 border border-purple-200 dark:border-purple-800">
           <Sparkles className="h-4 w-4 text-purple-600 dark:text-purple-400" />
-          <span className="text-sm font-medium text-purple-600 dark:text-purple-400">Let's Work Together</span>
+          <span className="text-sm font-medium text-purple-600 dark:text-purple-400">Let&apos;s Work Together</span>
         </div>
         <h2 className="text-3xl font-bold tracking-tight md:text-5xl lg:text-6xl font-heading leading-tight">
           Ready to <span className="gradient-text">Transform</span> Your Business?
         </h2>
         <p className="mx-auto max-w-[700px] text-lg text-muted-foreground leading-relaxed">
-          Let's discuss your goals and create a customized strategy to accelerate your growth. Get a free consultation today.
+          Let&apos;s discuss your goals and create a customized strategy to accelerate your growth. Get a free consultation today.
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">

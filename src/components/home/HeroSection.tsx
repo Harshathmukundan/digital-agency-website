@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
@@ -52,9 +53,11 @@ export const HeroSection = () => (
         <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <div className="absolute inset-0 bg-gradient-to-tr from-purple-600 to-indigo-500 rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
           <div className="relative group">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
               alt="Digital Marketing Illustration"
+              width={800}
+              height={600}
               className="relative mx-auto rounded-2xl shadow-2xl object-cover w-full aspect-[4/3] border-2 border-border group-hover:border-purple-500 transition-all duration-300"
             />
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-purple-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>

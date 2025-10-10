@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { BarChart } from 'lucide-react';
 
 const portfolioItems = [
@@ -19,7 +20,7 @@ export const PortfolioSection = () => (
         </div>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl font-heading">Success Stories</h2>
         <p className="max-w-[700px] text-muted-foreground md:text-lg leading-relaxed">
-          Real results from real clients. See how we've transformed businesses.
+          Real results from real clients. See how we&apos;ve transformed businesses.
         </p>
       </div>
       <div className="mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl">
@@ -30,7 +31,7 @@ export const PortfolioSection = () => (
             style={{ animationDelay: `${index * 0.15}s` }}
           >
             <div className="relative overflow-hidden aspect-[4/3]">
-              <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:rotate-1" />
+              <Image src={item.image} alt={item.title} width={600} height={400} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:rotate-1" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
               <div className="absolute top-4 right-4 px-3 py-1.5 rounded-full bg-gradient-to-r from-purple-600 to-indigo-500 text-white text-xs font-bold shadow-lg backdrop-blur-sm">
                 {item.results}
