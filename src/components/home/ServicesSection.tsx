@@ -1,15 +1,36 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Megaphone, Search, Users, TrendingUp, Sparkles } from 'lucide-react';
 
 const services = [
-  { icon: <Search className="h-6 w-6" />, title: "SEO Optimization", description: "Dominate search rankings and drive organic traffic with data-backed SEO strategies." },
-  { icon: <Megaphone className="h-6 w-6" />, title: "Paid Advertising", description: "ROI-focused PPC campaigns across Google Ads, Meta, and LinkedIn platforms." },
-  { icon: <Users className="h-6 w-6" />, title: "Social Media Marketing", description: "Build engaged communities and amplify your brand across all social channels." },
-  { icon: <TrendingUp className="h-6 w-6" />, title: "Branding & Strategy", description: "Craft compelling brand identities that resonate and drive customer loyalty." },
+  { 
+    icon: <Search className="h-6 w-6" />, 
+    title: "SEO Optimization", 
+    description: "Dominate search rankings and drive organic traffic with data-backed SEO strategies.",
+    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=300&fit=crop"
+  },
+  { 
+    icon: <Megaphone className="h-6 w-6" />, 
+    title: "Paid Advertising", 
+    description: "ROI-focused PPC campaigns across Google Ads, Meta, and LinkedIn platforms.",
+    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop"
+  },
+  { 
+    icon: <Users className="h-6 w-6" />, 
+    title: "Social Media Marketing", 
+    description: "Build engaged communities and amplify your brand across all social channels.",
+    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=300&fit=crop"
+  },
+  { 
+    icon: <TrendingUp className="h-6 w-6" />, 
+    title: "Branding & Strategy", 
+    description: "Craft compelling brand identities that resonate and drive customer loyalty.",
+    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=300&fit=crop"
+  },
 ];
 
 const ServiceSkeleton = () => (
@@ -55,13 +76,23 @@ export const ServicesSection = () => {
                 className="group relative overflow-hidden border-2 hover:border-purple-500 hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 animate-scale-in bg-background"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
+                {/* Background Image */}
+                <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+                  <Image 
+                    src={service.image} 
+                    alt={service.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="absolute top-0 right-0 w-24 h-24 bg-purple-500/5 rounded-full blur-2xl group-hover:bg-purple-500/10 transition-colors"></div>
-                <CardHeader className="items-center relative pb-4">
+                
+                <CardHeader className="items-center relative pb-4 z-10">
                   <div className="bg-gradient-to-br from-purple-500 to-indigo-500 p-4 rounded-2xl text-white shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">{service.icon}</div>
                   <CardTitle className="mt-4 text-center group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors text-lg">{service.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="text-center text-muted-foreground relative text-sm leading-relaxed">
+                <CardContent className="text-center text-muted-foreground relative text-sm leading-relaxed z-10">
                   {service.description}
                 </CardContent>
               </Card>
